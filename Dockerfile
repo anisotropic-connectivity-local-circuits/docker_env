@@ -6,6 +6,6 @@ RUN echo "deb http://downloads.skewed.de/apt/trusty trusty universe" >>/etc/apt/
 RUN echo "deb-src http://downloads.skewed.de/apt/trusty trusty universe" >>/etc/apt/sources.list
 #RUN apt-key add graph-tool-pub-key.txt
 
-#RUN add-apt-repository ppa:ubuntu-toolchain-r/test
+RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test
 
 RUN apt-get update && apt-get install -y python-graph-tool
