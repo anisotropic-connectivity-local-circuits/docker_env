@@ -11,3 +11,5 @@ RUN echo "deb-src http://downloads.skewed.de/apt/jessie jessie main" >>/etc/apt/
 RUN apt-get update
 
 RUN apt-get install -y --force-yes  python-graph-tool
+
+ENTRYPOINT ["/bin/sh", "/home/docker/env/neurosci/bin/activate"]
