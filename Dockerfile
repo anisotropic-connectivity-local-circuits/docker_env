@@ -12,4 +12,6 @@ RUN apt-get update
 
 RUN apt-get install -y --force-yes  python-graph-tool
 
-ENTRYPOINT ["/bin/sh", "/home/docker/env/neurosci/bin/activate"]
+# ENTRYPOINT ["/bin/sh", "/home/docker/env/neurosci/bin/activate"]
+
+WORKDIR /home/lab
