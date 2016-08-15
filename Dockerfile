@@ -14,5 +14,5 @@ RUN apt-get install -y --force-yes  python-graph-tool
 
 WORKDIR /home/lab
 
-ENTRYPOINT ["/home/docker/env/neurosci/bin/smtweb", "--allips"]
-
+#ENTRYPOINT ["/home/docker/env/neurosci/bin/smtweb", "--allips"]
+#ENTRYPOINT ["/usr/bin/screen", "--allips"]
