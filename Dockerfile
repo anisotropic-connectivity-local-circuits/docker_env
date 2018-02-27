@@ -34,7 +34,7 @@ RUN apt-get install -qy python-graph-tool
 # latex is used for text in figures but the full install
 # is prohibitively large. I will only recommend the full
 # image for byte-identical reproduction
-#RUN apt-get install -qy texlive-full
+RUN apt-get install -qy texlive-full
 
 RUN useradd -ms /bin/bash docker
 USER docker
